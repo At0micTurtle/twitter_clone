@@ -1,6 +1,6 @@
 import { sendError } from "h3"
-import { createUser } from "@/db/users.js"
-import { userTransformer } from "~~/server/transformers/user"
+import { createUser } from "../../db/users.js"
+import { userTransformer } from "../../transformers/user"
 
 export default defineEventHandler(async (event) => {
   const body = await useBody(event)
