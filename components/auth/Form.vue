@@ -12,7 +12,6 @@
 </template>
 
 <script setup>
-  const { login } = useAuth();
   const data = reactive({
     username: '',
     password: '',

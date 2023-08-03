@@ -20,7 +20,11 @@
     "@prisma/client": "^5.1.0",
     "@tailwindcss/forms": "^0.5.4",
     "bcrypt": "^5.1.0",
+    "cloudinary": "^1.40.0",
+    "formidable": "^3.5.0",
     "jsonwebtoken": "^9.0.1",
-    "mongodb": "^5.7.0"
+    "jwt-decode": "^3.1.2",
+    "mongodb": "^5.7.0",
+    "url-pattern": "^1.0.3"
   }
 }

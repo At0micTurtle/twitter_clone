@@ -22,7 +22,17 @@ export const decodeRefreshToken = (token) => {
   try {
     return jwt.verify(token, config.jwtRefreshSecret);
   } catch (error) {
-    
+    return null
+  }
+};
+
+export const decodeAccessToken = (token) => {
+  const config = runtimeConfig();
+  
+  try {
+    return jwt.verify(token, config.jwtAccessSecret);
+  } catch (error) {
+    return null
   }
 };
 

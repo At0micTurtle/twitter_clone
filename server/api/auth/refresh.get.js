@@ -36,4 +36,4 @@ export default defineEventHandler(async (event) => {
       statusMessage: 'Something went wrong'
     }))
   }
-})
+});
