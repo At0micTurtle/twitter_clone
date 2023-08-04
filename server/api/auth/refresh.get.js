@@ -6,17 +6,9 @@ import { getUserById } from '../../db/users.js'
 export default defineEventHandler(async (event) => {
   const cookies = useCookies(event)
   const refreshToken = cookies.refresh_token
-
-  if (!refreshToken) {
-    return sendError(event, createError({
-      statusCode: 401,
-      statusMessage: 'Refresh token is invalid'
-    }))
-  }
-
   const rToken = await getRefreshTokenByToken(refreshToken)
 
-  if (!rToken) {
+  if (!refreshToken || !rToken) {
     return sendError(event, createError({
       statusCode: 401,
       statusMessage: 'Refresh token is invalid'

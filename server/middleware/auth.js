@@ -13,7 +13,6 @@ export default defineEventHandler(async (event) => {
     const pattern = new UrlPattern(endpoint)
     
     if (event.request && event.request.url) {
-
       // event.request.url is undefined. Check for the url
       return pattern.match(event.request.url)
     }

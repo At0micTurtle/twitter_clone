@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-const loading = ref(false);
+  const loading = ref(false);
   const { postTweet } = useTweets();
   const props = defineProps({
     user: {

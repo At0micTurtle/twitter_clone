@@ -12,7 +12,7 @@ const cloudinary = () => {
   return _cloudinary;
 }
 
-export const uploadToCloudinary = () => {
+export const uploadToCloudinary = (image) => {
   return new Promise((resolve, reject) => {
     cloudinary().uploader.upload(image, (error, data) => {
       if (error) {
