@@ -1,5 +1,5 @@
-import { mediaFileTransformer } from './mediaFiles.js';
-import { userTransformer } from './user.js';
+import { mediaFileTransformer } from './mediaFiles';
+import { userTransformer } from './user';
 import human from 'human-time';
 
 export const tweetTransformer = (tweet) => {

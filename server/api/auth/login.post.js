@@ -1,7 +1,7 @@
-import { getUserByUsername } from '../../db/users.js';
-import { generateTokens, sendRefreshToken } from '../../utils/jwt.js';
-import { userTransformer } from '../../transformers/user.js';
-import { createRefreshToken } from '../../db/refreshTokens.js';
+import { getUserByUsername } from '../../db/users';
+import { generateTokens, sendRefreshToken } from '../../utils/jwt';
+import { userTransformer } from '../../transformers/user';
+import { createRefreshToken } from '../../db/refreshTokens';
 import { sendError } from 'h3';
 import bcrypt from 'bcrypt';
 

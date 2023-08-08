@@ -7,7 +7,8 @@ export default defineEventHandler(async (event) => {
   const endpoints = [
     '/api/auth/user',
     '/api/user/tweets',
-    'api/tweets'
+    'api/tweets',
+    'api/tweets/:id',
   ]
 
   const isHandledByThisMiddleware = endpoints.some((endpoint) => {
@@ -36,8 +37,7 @@ export default defineEventHandler(async (event) => {
   }  
 
   try {
-// sourcery skip: use-object-destructuring
-    const userId = decoded.userId
+    const {userId} = decoded
     const user = await getUserById(userId)
 
     event.context.auth = { user }
