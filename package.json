@@ -25,7 +25,7 @@
     "human-time": "^0.0.2",
     "jsonwebtoken": "^9.0.1",
     "jwt-decode": "^3.1.2",
-    "mongodb": "^5.8.0",
+    "mongodb": "^5.9.2",
     "url-pattern": "^1.0.3"
   }
 }
